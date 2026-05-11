@@ -994,35 +994,99 @@ p a:hover {
 	text-decoration:none;
 	text-transform:none;
 }
-.body .content-contact div div form h4 {
-	color:#7B8846;
-	font-size:21px;
-	font-weight:400;
-	letter-spacing:.02em;
-	line-height:24px;
-	margin:0 0 12px;
-	text-transform:none;
-}
-.body .content-contact div div form {
-	clear:both;
-	margin:0 0 46px;
-	padding:4px 0 0;
-}
-.body .content-contact div div form textarea {
-	background-color:#EEE;
-	border:1px solid #B9B9B9;
-	color:#939393;
-	display:block;
-	font-family:Arial, Helvetica, sans-serif;
-	font-size:11px;
-	height:189px;
-	letter-spacing:.02em;
-	margin:0 0 18px;
-	overflow:auto;
-	padding:4px 10px;
-	resize:none;
-	width:451px;
-}
+
+	.body .content-contact div div div .custom-form {
+		/*width: 600px;*/
+		margin: 0 auto;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+		.body .content-contact div div div .custom-form .form-row {
+			display: flex;
+			align-items: center;
+			margin-bottom: 18px;
+		}
+			.body .content-contact div div div .custom-form .form-row label {
+				width: 180px;
+				font-weight: 600;
+				font-size: 14px;
+				color: #333;
+			}
+	/* INPUT / SELECT / TEXTAREA */
+			.body .content-contact div div div .custom-form .form-row input[type="text"],
+			.body .content-contact div div div .custom-form .form-row input[type="email"],
+			.body .content-contact div div div .custom-form .form-row select,
+			.body .content-contact div div div .custom-form .form-row textarea {
+				flex: 1;
+				padding: 8px 10px;
+				border: 1px solid #ccc;
+				border-radius: 4px;
+				font-size: 14px;
+				background: #f9f9f9;
+			}
+
+	/* TEXTAREA */
+			.body .content-contact div div div .custom-form .form-row textarea {
+				height: 120px;
+				resize: vertical;
+			}
+
+/* RADIO & CHECKBOX GROUP */
+
+		.body .content-contact div div div .custom-form .radio-group,
+		.checkbox-group {
+			flex: 1;
+			display: flex;
+			gap: 15px;
+		}
+
+	/* RADIO & CHECKBOX ALIGN */
+			.body .content-contact div div div .custom-form .radio-group input,
+			.body .content-contact div div div .custom-form .checkbox-group input {
+				margin-right: 5px;
+			}
+
+/* BUTTON */
+		.body .content-contact div div div .custom-form .form-row button {
+			margin-left: 180px;
+			padding: 10px 25px;
+			background: #CE4718;
+			color: #fff;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			transition: 0.3s ease;
+		}
+
+			.body .content-contact div div div .custom-form .form-row button:hover {
+				background: #a83a14;
+			}
+	.body .content-contact div div .custom-form h4 {
+		color: #7B8846;
+		font-size: 21px;
+		font-weight: 400;
+		letter-spacing: .02em;
+		line-height: 24px;
+		margin: 0 0 12px;
+		text-transform: none;
+	}
+	
+		.body .content-contact div div .custom-form textarea {
+			background-color: #EEE;
+			border: 1px solid #B9B9B9;
+			color: #939393;
+			display: block;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 11px;
+			height: 189px;
+			letter-spacing: .02em;
+			margin: 0 0 18px;
+			overflow: auto;
+			padding: 4px 10px;
+			resize: none;
+			width: 451px;
+		}
+	
+
 .body .content-contact div div.sidebar {
 	background:none repeat scroll 0 0 transparent;
 	float:left;
