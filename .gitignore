@@ -1,0 +1,8 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/Alumni.slnx/config/applicationhost.config
+/.vs/Alumni.slnx/v18
+/.vs/Alumni.slnx/FileContentIndex
+/.vs/slnx.sqlite
